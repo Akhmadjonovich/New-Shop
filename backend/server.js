@@ -7,10 +7,17 @@ const morgan = require('morgan');
 const compression = require('compression');
 
 // Avval dotenv ni sozlash
-const result = dotenv.config();
-if (result.error) {
-  console.error('❌ .env faylini yuklashda xato:', result.error);
-  process.exit(1);
+// server.js (10-qator atrofida)
+const fs = require('fs');
+const path = require('path');
+
+const envPath = path.resolve(__dirname, '.env');
+
+if (fs.existsSync(envPath)) {
+    dotenv.config({ path: envPath });
+} else {
+    console.log("ℹ️  .env fayli topilmadi, Render Environment Variables ishlatiladi.");
+    dotenv.config(); // Bu tizimdagi o'zgaruvchilarni o'qiydi
 }
 
 console.log('📁 Environment loaded successfully');
