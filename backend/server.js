@@ -122,7 +122,12 @@ function getMongoState(state) {
   };
   return states[state] || 'unknown';
 }
+// backend/server.js ichida
 
+
+app.use(cors({
+  origin: 'https://new-shop-gamma-eight.vercel.app' // Faqat frontend manzilingizga ruxsat
+}));
 /* =============== 404 HANDLER ====================== */
 app.use('*', (req, res) => {
   res.status(404).json({
