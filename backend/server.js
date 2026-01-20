@@ -21,10 +21,13 @@ const app = express(); // 2. Appni hamma narsadan oldin e'lon qilish
 // 3. Ruxsat berilgan manzillar
 const allowedOrigins = [
   'https://new-shop-gamma-eight.vercel.app',
-  'https://new-shop-2-rust.vercel.app/',
+  'https://new-shop-gamma-eight.vercel.app/', // Oxirida slesh bilan
+  'https://new-shop-2-rust.vercel.app', // Oxirida slesh bilan
+  'https://new-shop-2-rust.vercel.app/', // Oxirida slesh bilan
   'http://localhost:5173',
   'http://localhost:5174',
-  'http://localhost:3000'
+  'http://127.0.0.1:5173',
+  'http://127.0.0.1:5174'
 ];
 
 // 4. CORS Sozlamasi (Faqat bir marta va to'g'ri)
