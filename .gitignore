@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+
+# build outputs
+dist/
+build/
+.next/
+
+# env
+.env
+.env.local
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
