@@ -21,6 +21,7 @@ const app = express(); // 2. Appni hamma narsadan oldin e'lon qilish
 // 3. Ruxsat berilgan manzillar
 const allowedOrigins = [
   'https://new-shop-gamma-eight.vercel.app',
+  'https://new-shop-2-rust.vercel.app/',
   'http://localhost:5173',
   'http://localhost:5174',
   'http://localhost:3000'
