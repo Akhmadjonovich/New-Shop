@@ -1,7 +1,11 @@
 import axios from 'axios';
 
 // API URL - Vite proxy orqali
-const API_URL = import.meta.env.VITE_API_URL || '/api';
+// api.js (4-qator)
+// Agar env dan kelmasa, Render URL ga /api qo'shib yozamiz
+const API_URL = import.meta.env.VITE_API_URL || "https://new-shop-1.onrender.com/api"; 
+
+console.log('API URL:', API_URL);
 
 console.log('API URL:', API_URL);
 
