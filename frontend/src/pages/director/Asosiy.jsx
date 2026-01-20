@@ -27,6 +27,7 @@ import { productAPI, saleAPI } from '../../services/api';
 import { format, startOfDay, endOfDay, startOfMonth, endOfMonth, isToday, isSameMonth, parseISO } from 'date-fns';
 import { useNavigate } from 'react-router-dom';
 
+
 const Asosiy = () => {
   const navigate = useNavigate();
   
