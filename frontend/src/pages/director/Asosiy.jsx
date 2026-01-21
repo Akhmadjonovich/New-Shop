@@ -556,15 +556,15 @@ const formatShortNumber = (num) => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const checkForUpdates = () => {
-      loadData();
-    };
+  // useEffect(() => {
+  //   const checkForUpdates = () => {
+  //     loadData();
+  //   };
 
-    const updateInterval = setInterval(checkForUpdates, 10000);
+  //   const updateInterval = setInterval(checkForUpdates, 10000);
     
-    return () => clearInterval(updateInterval);
-  }, []);
+  //   return () => clearInterval(updateInterval);
+  // }, []);
 
   // Scroll to top functions
   const scrollToDailyTop = () => {
